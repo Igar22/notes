@@ -1,19 +1,17 @@
+import {MdSearch} from 'react-icons/md'
 import React from 'react';
 
 const SearchNote = () => {
   return (
     <div className='search'>
-      {/* <div>
-          <textarea
-            id='text' value={''} 
-            placeholder='Type...'
-            name='text' maxLength = {200}
-            onChange={} />
+      <div className='search-text'>
+        <MdSearch className='search-icon' size={30}/>
+        <textarea 
+          id='text' value={''} 
+          placeholder='Type...'
+          name='text' maxLength = {50}
+            />
       </div> 
-      <div className='note-save'>
-        <button className='save-button' style={{float: 'right'}}
-        onClick={}>Add</button>
-      </div>       */}
     </div>
   );
 };

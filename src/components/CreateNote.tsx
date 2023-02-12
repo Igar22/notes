@@ -16,8 +16,8 @@ const CreateNote: React.FC = ({  }) => {
   
   return (
     <div className='create-note'>
-      <div>
-          <textarea
+      <div className='create-note-text'>
+          <textarea 
             id='text' value={noteText} 
             placeholder='Type...'
             name='text' maxLength = {200}
@@ -25,7 +25,7 @@ const CreateNote: React.FC = ({  }) => {
       </div> 
       <div className='note-save'>
         <button className='save-button' style={{float: 'right'}}
-        onClick={handleAddClick}>Add</button>
+        onClick={handleAddClick}>+</button>
       </div>
       
     </div>
@@ -33,6 +33,7 @@ const CreateNote: React.FC = ({  }) => {
 };
 
 export default CreateNote;
+
 
 function addNote(noteText: string) {
   throw new Error('Function not implemented.');

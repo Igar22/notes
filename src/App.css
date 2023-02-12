@@ -15,7 +15,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size:large;
+  font-size: large;
   background: rgb(26, 108, 175);
   height: 120px;
   border-radius: 20px;
@@ -23,12 +23,15 @@
 }
 
 .search {
-  height: 40px;
+  height: 25px;
   display: flex;
   background:rgb(235, 219, 0);
   border-radius: 10px;
   margin-top: 15px;
   margin-bottom: 15px;
+  padding: 1rem;
+  justify-content: space-between;
+  display: flex;
 }
 
 .notes-grid {
@@ -49,7 +52,18 @@
   word-wrap: break-word;
 }
 
-textarea {
+.save-button {
+  height: 25px;
+  width: 25px;
+  border: none;
+  border-radius: 5px;
+  background: #000;
+  color: rgb(235, 219, 0);
+  font-size: larger;
+  cursor: pointer;
+}
+
+.create-note-text textarea {
   border: none;
   resize: none;
   background-color:rgb(235, 219, 0);
@@ -58,16 +72,31 @@ textarea {
 }
 
 textarea:focus {
-  outline: none;;
+  outline: none;
+}
+
+.search-text {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.search-text textarea {
+  border: none;
+  resize: none;
+  background-color:rgb(235, 219, 0);
+  height: 20px;
+  display: block;
+  width: 100%;
 }
 
 .note textarea {
-    white-space: pre-wrap;
-    background: transparent;
-    border: none;
-    color: #fff;
-    resize: none;
-    font-size: 18px;
+  white-space: pre-wrap;
+  background: transparent;
+  border: none;
+  color: #fff;
+  resize: none;
+  font-size: 18px;
 }
 
 .note textarea:focus {
